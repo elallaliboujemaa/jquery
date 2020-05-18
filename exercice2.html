@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"></link>
+<script src="js/jquery.min.js"></script>
+
+    <title>hide / show</title>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $("#div1").fadeToggle();
+            $("#div2").fadeToggle("slow");
+            $("#div3").fadeToggle(3000);
+          });
+        });
+        </script>
+</head>
+<body>
+    <div class="container" style="width: 400px;">
+      
+        <!--div class="card-group mb-5"-->
+            <div class="card">
+                <div class="card-header"><a href="#div1"><button data-toggle="popover" title="Montrez/Cachez" data-placement="bottom"><i class="fas fa-times"></i>/<i class="fas fa-eye"></i></button></a>
+                </div>
+                <div class="card-body" id="div1">
+                    
+                <div class="card-title"><h3>Titre de la premiére carte</h3></div>
+                    AMESIP, Association Marocaine d'aide aux Enfants en Situation Précaire,
+                    - AMESIP, Association Marocaine d'aide aux Enfants en Situation Précaire, (AMESIP).
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sed consequuntur totam vero commodi voluptates expedita hic reprehenderit
+                   ! Fuga, deleniti aliquid! Ea omnis magni maxime tempora reiciendis doloribus adipisci quidem?<br>
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias quo obcaecati aspernatur accusantium est deleniti. Numquam optio laudantium ut,
+               <br> at debitis dolore, quo totam, corporis dolores assumenda earum! Harum, deleniti?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fuga, possimus exercitationem rerum nesciunt cumque totam odit id optio necessitatibus veniam?
+           
+                    
+                    <p class="card-text">Une ligne de texte dans notre premiére carte.</p>
+                    <p class="card-text"><small class="text-muted">Ligne de texte supplémentaire</small></p>
+                </div>
+                <div class="card-footer"  id="div2"><a href="mailto:elallaliboujemaa@gmail.com"><button id="send"><i class="fa fa-share" data-toggle="tooltip" title="envoyer le message"></i></a>
+                </button></div>
+
+            </div>

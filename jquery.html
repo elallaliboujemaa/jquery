@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#test1").hide();
+                $("#test2").hide();
+            });
+        });
+        $(document).ready(function(){
+            $("p").click(function(){
+                $(this).hide();
+              
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Ceci est le titre</h2>
+    <p id="test1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti nostrum sunt voluptatem quam laborum, sit eius, explicabo, cumque aspernatur dignissimos quo
+         facilis ab soluta iusto maxime. Deleniti laudantium mollitia odio?</p>
+    <p id="test2">paragraphe test avec "id"</p>
+    <button>cliquez ici</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+    
+        $(document).ready(function(){
+            $("#p1").hover(function(){
+              alert("Attention danger vous êtes entré dans la zone interdite!");},
+              function(){
+                  alert("Bye! bye! vous sortez en vie de la zone interdite !");
+              
+              
+            });
+        });
+    </script>
+</head>
+<body>
+    
+    <p id="p1"> entrez dans paragraphe</p>
+</body>
+</html>
